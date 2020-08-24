@@ -1,0 +1,44 @@
+html, body {
+    background-color: #000;
+}
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+video {
+    width: 100%;
+}
+select {
+    z-index: 100;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+select:hover {
+    opacity: 1;
+}
+#drag {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    -webkit-app-region: drag;
+}
+#help-text {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    color: #444;
+    font-size: 48px;
+    font-family: Helvetica, Arial;
+    margin-top: -1em;
+}
+#help-text span {
+    font-size: 28px;
+}

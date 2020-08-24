@@ -1,0 +1,19 @@
+{
+  "name": "camera",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/main.js",
+  "scripts": {
+    "start": "electron .",
+    "startTransparent": "electron enable-transparent-visuals .",
+    "package-win": "electron-packager . --platform=win32 --arch=x64 --overwrite --out=builds --prune=true --icon=images/icon.ico",
+    "package-mac": "electron-packager . --platform=darwin --arch=x64 --overwrite --out=builds --prune=true --icon=images/icon.icns",
+    "package-linux": "electron-packager . --platform=linux --arch=x64 --overwrite --out=builds --prune=true --icon=images/icon.png"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^9.2.1",
+    "electron-packager": "^15.1.0"
+  }
+}
