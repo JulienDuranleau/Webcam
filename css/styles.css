@@ -7,6 +7,10 @@ body {
 }
 video {
     width: 100%;
+    transform: scaleX(-1);
+}
+video.flip {
+    transform: scaleX(1);
 }
 select {
     z-index: 100;

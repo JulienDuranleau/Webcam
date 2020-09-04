@@ -74,3 +74,9 @@ window.addEventListener("resize", e => {
         }
     }, 250)
 })
+
+window.addEventListener("keydown", e => {
+    if (e.key == "f") {
+        video_tag.classList.toggle("flip")
+    }
+})
